@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1 {
+    background-color: teal;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* main */
+
+/* three puppies */
+.three-puppies {
+    margin: 2rem 5%;
+}
+
+.three-puppies div {
+    margin: 10px 0;
+}
+
+.three-puppies div:nth-child(2) {
+    display: none;
+}
+
+
+/* two puppies */
+h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 2rem;
+}
+
+.two-puppies {
+    margin: 2rem 5%;
+}
+
+.two-puppies div {
+    margin: 10px 0;
+}
+
+
+@media(min-width:768px) {
+    .three-puppies {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    /* common class three-puppies and two-puppies */
+    .puppy div {
+        width: 40vh;
+        height: auto;
+    }
+
+    .three-puppies div:nth-child(2) {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 7vh;
+        
+        /* added css to the previous */
+        border: 1px solid black;
+        background-color: rgba(185, 118, 118, 0.45);
+    }
+
+    /* two puppies */
+    .two-puppies {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}

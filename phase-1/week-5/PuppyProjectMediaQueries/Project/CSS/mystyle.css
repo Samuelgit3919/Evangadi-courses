@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    max-width: 100%;
+}
+
+header {
+    background-color: rgba(27, 91, 176, 0.562);
+    padding: 20px;
+    text-align: center;
+    /* width: 100%; */
+}
+
+header h1 {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+.paragraph-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-section img {
+    width: 450px;
+    margin: 0 auto;
+}
+
+img:nth-child(3) {
+    display: none;
+}
+
+footer {
+    background-color: rgba(27, 91, 176, 0.562);
+    text-align: center;
+    margin-top: 3rem;
+    padding: 10px;
+}
+
+
+
+@media (min-width: 676px) and (max-width: 767px) {
+    .image-section img {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .paragraph-section {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .paragraph-section p:nth-child(3) {
+        display: none;
+    }
+
+    .image-section {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    img {
+        height: 350px;
+    }
+
+    img:nth-child(2) {
+        display: none;
+    }
+
+    img:nth-child(3) {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .paragraph-section {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin: 1rem 5rem;
+    }
+    .paragraph-section p{
+        background-color: rgb(10, 117, 193);
+        color: white;
+        padding: 7px;
+    }
+
+    .paragraph-section p:nth-child(3) {
+        display: flex;
+    }
+
+    img:nth-child(2) {
+        display: none;
+    }
+
+    img:nth-child(3) {
+        display: flex;
+        height: 460px;
+    }
+
+    .image-section {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 20px;
+        margin:0 4rem;
+    }
+    .image-section img{
+        width: 350px;
+        height: 350px;
+    }
+
+}

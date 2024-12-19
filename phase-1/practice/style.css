@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.watch-div {
+    background-image: url("./images/home/watch-series-5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.card-div {
+    background-image: url("./images/home/iphone11-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media(max-width:768px){
+    .watch-div{
+        height: 65vh;
+    }
+    .card-div{
+        height: 65vh;
+    }
+}
