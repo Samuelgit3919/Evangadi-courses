@@ -16,7 +16,6 @@ class MyCounter extends Component {
 
     render() {
         return (
-            // mini border around the components 
             <div className="border-2 border-gray-200 p-4 flex flex-col items-center mt-4 shadow">
                 <CounterDisplay count={this.state.count} />
                 <button
