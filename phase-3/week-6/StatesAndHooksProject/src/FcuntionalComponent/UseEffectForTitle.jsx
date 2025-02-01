@@ -4,16 +4,16 @@ const UseEffectForTitle = () => {
     const [count, setCount] = useState(0)
 
     useEffect(() => {
-        document.title = `Count: ${count}`
+        document.title = `Count:${count}`
     }, [count])
 
-    // useEffect(() => {
-    //     alert('Component mounted')
-    // }, [])
+    useEffect(() => {
+        alert('Component mounted')
+    }, [])
 
     const increaseCount = () => setCount(count + 1)
     return (
-        <div className='min-h-screen pt-8 bg-gray-200 text-center'>
+        <div className='min-h-screen mt-12 pt-8 bg-gray-200 text-center'>
             <button
                 className='bg-teal-600 text-white px-6 py-3 rounded-lg teal:bg-green-700 transition mb-4'
                 onClick={increaseCount}>

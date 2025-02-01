@@ -1,6 +1,6 @@
-// import MyCounter from "./ClassBased/MyCounter"
+import MyCounter from "./ClassBased/MyCounter"
 import IncreaseDecreaseCount from "./FcuntionalComponent/IncreaseDecreaseCount"
-// import UseEffectForTitle from "./FcuntionalComponent/UseEffectForTitle"
+import UseEffectForTitle from "./FcuntionalComponent/UseEffectForTitle"
 
 
 
@@ -10,11 +10,9 @@ function App() {
 
   return (
     <>
-      {/* mini border around the components */}
-
-      {/* <MyCounter /> */}
+      <MyCounter />
       <IncreaseDecreaseCount />
-      {/* <UseEffectForTitle /> */}
+      <UseEffectForTitle />
 
     </>
   )
