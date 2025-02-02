@@ -1,10 +1,10 @@
-import React from "react";
+// import React from "react";
+import Rocket from "./api/Rocket";
 
 const App = () => {
   return (
     <>
-      <div>App</div>
-      <h1>sami</h1>
+      <Rocket />
     </>
   );
 };
