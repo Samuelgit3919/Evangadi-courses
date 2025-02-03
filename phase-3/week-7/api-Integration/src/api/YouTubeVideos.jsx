@@ -26,10 +26,8 @@ const YouTubeVideos = () => {
       <div className="youtube-container">
         {
           loading ? <div className='loader'></div> :
-
             videos.map((video) => (
               <div key={video.id.videoId} className="youtube-video">
-
                 <iframe
                   src={`https://www.youtube.com/embed/${video.id.videoId}`}
                   frameBorder="0"
