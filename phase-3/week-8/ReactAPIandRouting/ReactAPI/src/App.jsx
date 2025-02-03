@@ -12,6 +12,7 @@ import SectionFour from './components/Main/SectionFour'
 import SectionFive from './components/Main/SectionFive'
 import SectionSix from './components/Main/SectionSix'
 import Alert from './components/Main/Alert'
+import YoutubeVideos from './components/YoutubeVideos'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <SectionFour />
         <SectionFive />
         <SectionSix />
+        <YoutubeVideos />
       </main>
 
       <footer>
