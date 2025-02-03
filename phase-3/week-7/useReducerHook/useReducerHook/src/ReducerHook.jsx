@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { useReducer } from "react";
 
 const reducer = (state, action) => {
@@ -46,6 +46,7 @@ const ReducerHook = () => {
           dispatch({ type: "USER_INPUT", payload: e.target.value })
         }
       />
+      <p>{state.userInput}</p>
       <br />
       <br />
       <p>{state.count}</p>
@@ -63,7 +64,7 @@ const ReducerHook = () => {
 
       <br />
       <br />
-      <p>{state.userInput}</p>
+
     </main>
   );
 };

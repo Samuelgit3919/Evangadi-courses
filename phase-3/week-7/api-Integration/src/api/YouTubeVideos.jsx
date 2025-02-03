@@ -7,7 +7,7 @@ const YouTubeVideos = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 50000);
+    }, 5000);
 
     fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCxA7AzkI2Sndf8S1G5rSkwQ&maxResults=10&order=date&key=AIzaSyBYyOYldQA8VJ_dv-c4js1iawXj-MZkW04')
       .then(res => res.json())
@@ -15,6 +15,8 @@ const YouTubeVideos = () => {
         setVideos(res.items)
         setLoading(false)
       })
+    console.log(videos);
+
     return () => clearTimeout(timer);
   }, []);
 
