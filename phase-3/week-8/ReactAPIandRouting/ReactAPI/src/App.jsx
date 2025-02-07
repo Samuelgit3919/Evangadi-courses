@@ -1,44 +1,47 @@
-
-import './commonResource/css/bootstrap.css'
-// import 'bootstrap/dist/css/bootstrap.min.css'
-
-import './commonResource/css/styles.css'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import SectionOne from './components/Main/SectionOne'
-import SectionTwo from './components/Main/SectionTwo'
-import SectionThree from './components/Main/SectionThree'
-import SectionFour from './components/Main/SectionFour'
-import SectionFive from './components/Main/SectionFive'
-import SectionSix from './components/Main/SectionSix'
-import Alert from './components/Main/Alert'
-import YoutubeVideos from './components/YoutubeVideos'
+import { Routes, Route } from "react-router-dom";
+import "./commonResource/css/styles.css";
+import SectionOne from "./components/Main/SectionOne";
+import SectionTwo from "./components/Main/SectionTwo";
+import SectionThree from "./components/Main/SectionThree";
+import SectionFour from "./components/Main/SectionFour";
+import SectionFive from "./components/Main/SectionFive";
+import Sectionsix from "./components/Main/Sectionsix";
+import Alert from "./components/Main/Alert";
+import YoutubeVideos from "./components/YoutubeVideos";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Iphone from "./IphonePage/Iphone";
+import "./commonResource/css/styles.css";
+import "./commonResource/css/bootstrap.css";
 
 function App() {
-
-
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Header />
 
-      <main>
-        <Alert />
-        <SectionOne />
-        <SectionTwo />
-        <SectionThree />
-        <SectionFour />
-        <SectionFive />
-        <SectionSix />
-        <YoutubeVideos />
-      </main>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Alert />
+              <SectionOne />
+              <SectionTwo />
+              <SectionThree />
+              <SectionFour />
+              <SectionFive />
+              <Sectionsix />
+              <YoutubeVideos />
+            </>
+          }
+        />
 
-      <footer>
-        <Footer />
-      </footer>
+        <Route path="/iphone" element={<Iphone />} />
+      </Routes>
+
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
