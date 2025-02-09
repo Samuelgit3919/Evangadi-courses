@@ -1,21 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Add Product</title>
   </head>
   <body>
-    <h1>Add Product</h1>
-    <form action="/add-product" method="POST">
-      <label>Name:</label>
-      <input type="text" name="name" required /><br />
+    <h2>Add a New Product</h2>
+    <form action="http://localhost:3000/add-product" method="POST">
+      <label for="product_url">Product URL:</label>
+      <input
+        type="text"
+        id="product_url"
+        name="product_url"
+        required
+      /><br /><br />
 
-      <label>Price:</label>
-      <input type="number" name="price" step="0.01" required /><br />
+      <label for="product_name">Product Name:</label>
+      <input
+        type="text"
+        id="product_name"
+        name="product_name"
+        required
+      /><br /><br />
 
-      <label>Description:</label>
-      <textarea name="description"></textarea><br />
+      <label for="brief_description">Brief Description:</label>
+      <input
+        type="text"
+        id="brief_description"
+        name="brief_description"
+        required
+      /><br /><br />
 
-      <button type="submit">Submit</button>
+      <label for="product_description">Product Description:</label>
+      <textarea
+        id="product_description"
+        name="product_description"
+        required
+      ></textarea
+      ><br /><br />
+
+      <label for="product_img">Product Image URL:</label>
+      <input
+        type="text"
+        id="product_img"
+        name="product_img"
+        required
+      /><br /><br />
+
+      <label for="product_link">Product Link:</label>
+      <input
+        type="text"
+        id="product_link"
+        name="product_link"
+        required
+      /><br /><br />
+
+      <label for="starting_price">Starting Price:</label>
+      <input
+        type="text"
+        id="starting_price"
+        name="starting_price"
+        required
+      /><br /><br />
+
+      <label for="price_range">Price Range:</label>
+      <input
+        type="text"
+        id="price_range"
+        name="price_range"
+        required
+      /><br /><br />
+
+      <button type="submit">Add Product</button>
     </form>
   </body>
 </html>
